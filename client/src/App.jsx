@@ -1,11 +1,22 @@
+import React, { useEffect, useState} from 'react';
 import './main.css';
 
 function App() {
 
-  // console.log("app.jsx")
+  // const [data, setData] = useState([{}])
+
+  // useEffect(() => {
+  //   fetch("/data").then(
+  //     response => response.json()
+  //   ).then(
+  //     data => 
+  //     {setData(data)}
+  //   )
+  // }, [])
+
   return (
     <div>
-     <h1>hi</h1>
+     <h1>hello</h1>
     </div>
   );
 }
