@@ -1,22 +1,14 @@
-import React, { useEffect, useState} from 'react';
+import React from 'react';
 import './main.css';
+import Octopus from './components/Octopus.jsx'
 
 function App() {
 
-  // const [data, setData] = useState([{}])
-
-  // useEffect(() => {
-  //   fetch("/data").then(
-  //     response => response.json()
-  //   ).then(
-  //     data => 
-  //     {setData(data)}
-  //   )
-  // }, [])
-
   return (
+
     <div>
-     <h1>hello</h1>
+     <h1>hello from App.jsx</h1>
+     < Octopus />
     </div>
   );
 }
