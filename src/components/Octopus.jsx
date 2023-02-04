@@ -1,18 +1,18 @@
-import React from "react";
-import { Component } from 'react'
+import React, { Component, useState } from "react";
  
-class Octopus extends Component {
+function Octopus(props) {
+    console.log('hi ', props)
 
 
-  render() {
    return <div>
     <p> 
       hi from Octopus.jsx
     </p>
    </div>;
 
-  }
- }
+
+}
+
  
  export default Octopus
  
