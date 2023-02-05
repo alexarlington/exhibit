@@ -1,22 +1,21 @@
 import React from 'react';
-// import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './main.css';
 import Octopus from './components/Octopus.jsx'
-// import OctoText from './components/OctoText.jsx'
-import jsonData from './exhibit1.json'
-// const asdfg = jsonData.octopus.english[0].name
-// const southIslandData = jsonData['south island']
-// images/1.jpg
-// const octopusData = jsonData.octopus
+import Octo from './components/Octo.jsx'
+import octopusExhibit from './exhibit1.json'
+// import southIslandExhibit from './exhibit2.json'
 
 function App() {
 
   return (
     <div>
       <h1>App.jsx</h1>
-      <p className="description">{jsonData.pages[1].copy[1].description}</p>
-      <Octopus />
-      
+      <Routes>
+        <Route path="/octopus" element={<Octopus data={octopusExhibit}/>} />
+        <Route path="/octopus/:id" element={<Octo exhibit={octopusExhibit}/>} />
+      </Routes>
+
     </div>
   )
 }

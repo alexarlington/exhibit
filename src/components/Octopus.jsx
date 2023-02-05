@@ -1,6 +1,13 @@
 import React from "react";
+import { useParams } from 'react-router-dom'
+ 
  
 function Octopus(props) {
+  // const { id } = useParams()
+  // const pageData  = octopusExhibit.find(page => page.id === id)
+  
+  
+  console.log(props)
 
    return (<div>
     <p> 
@@ -12,37 +19,3 @@ function Octopus(props) {
 }
 
  export default Octopus
- 
- 
- 
-
-
- 
-//  constructor(){
-//   super();
-//   this.state = {
-//   octopus: []
-// }
-// }
-
-// componentDidMount(){
-// fetch('/octopus')
-// .then(res => res.json())
-// .then(octopus => {
-// this.setState({octopus: octopus})
-// })
-// }
-
-
-//  {
-//   this.state.db.map(db => {
-//    <p>hi {db.Octopus} </p>
-//   })
-//  }
-
-// {
-//   this.state.octopus.map(octopus => 
-//     <p key={octopus.id}>hi {octopus.english} </p>
-//   )
-// }
-

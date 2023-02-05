@@ -5,6 +5,7 @@
 
 
 
+<p className="description">{octopusExhibit.pages[1].copy[1].description}</p>
 
 
 {
