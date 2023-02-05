@@ -1,0 +1,179 @@
+
+{
+ "id": "exhibit2",
+ "pages": [
+  {
+    "id": "south-island",
+    "image": {
+      "src": "/images/south-island.png",
+      "alt": "Map of South Island"
+    },
+    "hotspots": [{
+     "shape": "",
+     "coords": "",
+     "alt": "",
+     "href": ""
+    }],
+    "copy":[{
+     "language": "EN",
+     "title": "South Island",
+     "description": null,
+     "subtitle": "Regional Map"
+    },
+    {
+     "language": "MI",
+     "title": "Te Waipounamu",
+     "description": null,
+     "subtitle": "Mahere whenua"
+    }
+   ]
+   },
+  {
+   "id": "tasman",
+   "image": {
+     "src": "/images/tasman.jpg",
+     "alt": "Tasman Waterfall"
+   },
+   "hotspots": null,
+   "copy":[{
+    "language": "EN",
+    "title": "Tasman",
+    "description": "Nelson was named in honour of the Admiral Horatio Nelson who defeated both the French and Spanish fleets at the Battle of Trafalgar in 1805. Many roads and public areas around the city are named after people and ships associated with that battle and Trafalgar Street is the main shopping axis of the city. Inhabitants of Nelson are referred to as Nelsonians.",
+    "subtitle": null
+   },
+   {
+    "language": "MI",
+    "title": "Te Tai-o-Aorere",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mauris ornare, vehicula enim et, sagittis orci. Duis vehicula, urna malesuada semper tincidunt, sem lacus porttitor leo, eget facilisis magna erat non tellus. Fusce dignissim euismod interdum. Phasellus euismod, diam a varius condimentum, quam nulla laoreet lectus, varius tempus sem ligula at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem vitae sem dignissim gravida. In efficitur.",
+    "subtitle": null
+   }
+  ]
+  },
+  {
+    "id": "nelson",
+    "image": {
+      "src": "/images/nelson.jpg",
+      "alt": "City of Nelson"
+    },
+    "hotspots": null,
+    "copy":[{
+     "language": "EN",
+     "title": "Nelson",
+     "description": "Nelson was named in honour of the Admiral Horatio Nelson who defeated both the French and Spanish fleets at the Battle of Trafalgar in 1805. Many roads and public areas around the city are named after people and ships associated with that battle and Trafalgar Street is the main shopping axis of the city. Inhabitants of Nelson are referred to as Nelsonians.",
+     "subtitle": null
+    },
+     {
+     "language": "MI",
+     "title": "Whakatū",
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mauris ornare, vehicula enim et, sagittis orci. Duis vehicula, urna malesuada semper tincidunt, sem lacus porttitor leo, eget facilisis magna erat non tellus. Fusce dignissim euismod interdum. Phasellus euismod, diam a varius condimentum, quam nulla laoreet lectus, varius tempus sem ligula at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem vitae sem dignissim gravida. In efficitur",
+     "subtitle": null
+    }
+   ]
+   },
+   {
+    "id": "marlborough",
+    "image": {
+      "src": "/images/malborough-sounds.jpg",
+      "alt": "Marlborough Sounds"
+    },
+    "hotspots": null,
+    "copy":[{
+     "language": "EN",
+     "title": "Marlborough",
+     "description": "Marlborough is known for its dry climate, the Marlborough Sounds, and Sauvignon blanc wine. It takes its name from the earlier Marlborough Province, which was named after General The 1st Duke of Marlborough, an English general and statesman.",
+     "subtitle": null
+    },
+     {
+     "language": "MI",
+     "title": "Te Tauihu-o-te-waka",
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mauris ornare, vehicula enim et, sagittis orci. Duis vehicula, urna malesuada semper tincidunt, sem lacus porttitor leo, eget facilisis magna erat non tellus. Fusce dignissim euismod interdum. Phasellus euismod, diam a varius condimentum, quam nulla laoreet lectus, varius tempus sem ligula at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem vitae sem dignissim gravida. In efficitur",
+     "subtitle": null
+    }
+   ]
+   },
+   {
+    "id": "west coast",
+    "image": {
+      "src": "/images/west-coast.jpg",
+      "alt": "West Coast rocks"
+    },
+    "hotspots": null,
+    "copy":[{
+     "language": "EN",
+     "title": "West Coast",
+     "description": "The name Westland is used by some New Zealanders to refer to the whole of the West Coast, including Grey District, Buller District and Fiordland,[citation needed] and can also refer to the short-lived Westland Province of 1873–76. Fiordland is on the west coast, but is in the Southland Region rather than the West Coast Region. Inhabitants of the West Coast are colloquially known as 'Coasters'",
+     "subtitle": null
+    },
+     {
+     "language": "MI",
+     "title": "Te Tai Poutini",
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mauris ornare, vehicula enim et, sagittis orci. Duis vehicula, urna malesuada semper tincidunt, sem lacus porttitor leo, eget facilisis magna erat non tellus. Fusce dignissim euismod interdum. Phasellus euismod, diam a varius condimentum, quam nulla laoreet lectus, varius tempus sem ligula at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem vitae sem dignissim gravida. In efficitur",
+     "subtitle": null
+    }
+   ]
+   },
+   {
+    "id": "canterbury",
+    "image": {
+      "src": "/images/chch-cathedral.jpg",
+      "alt": "Christchurch Cathedral"
+    },
+    "hotspots": null,
+    "copy":[{
+     "language": "EN",
+     "title": "Canterbury",
+     "description": "The Canterbury Province was formed in 1853 following the passing of the New Zealand Constitution Act 1852. It was formed from part of New Munster Province and covered the middle part of the South Island, stretching from the east coast to the west coast. The province was abolished, along with other provinces of New Zealand, when the Abolition of the Provinces Act came into force on 1 Nov 1876. The modern Canterbury Region has slightly different boundaries, particularly in the north, where it includes some districts from the old Nelson Province.",
+     "subtitle": null
+    },
+     {
+     "language": "MI",
+     "title": "Waitaha",
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mauris ornare, vehicula enim et, sagittis orci. Duis vehicula, urna malesuada semper tincidunt, sem lacus porttitor leo, eget facilisis magna erat non tellus. Fusce dignissim euismod interdum. Phasellus euismod, diam a varius condimentum, quam nulla laoreet lectus, varius tempus sem ligula at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem vitae sem dignissim gravida. In efficitur",
+     "subtitle": null
+    }
+   ]
+   },
+   {
+    "id": "otago",
+    "image": {
+      "src": "/images/otago.jpg",
+      "alt": "Otago Clocktower"
+    },
+    "hotspots": null,
+    "copy":[{
+     "language": "EN",
+     "title": "Otago",
+     "description": "The name 'Otago' is the local southern Māori dialect pronunciation of 'Ōtākou', the name of the Māori village near the entrance to Otago Harbour.The exact meaning of the term is disputed, with common translations being 'isolated village' and 'place of red earth', the latter referring to the reddish-ochre clay which is common in the area around Dunedin. 'Otago' is also the old name of the European settlement on the harbour, established by the Weller Brothers in 1831, which lies close to Otakou. The upper harbour later became the focus of the Otago Association, an offshoot of the Free Church of Scotland, notable for its adoption of the principle that ordinary people, not the landowner, should choose the ministers",
+     "subtitle": null
+    },
+     {
+     "language": "MI",
+     "title": "Ōtākou",
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mauris ornare, vehicula enim et, sagittis orci. Duis vehicula, urna malesuada semper tincidunt, sem lacus porttitor leo, eget facilisis magna erat non tellus. Fusce dignissim euismod interdum. Phasellus euismod, diam a varius condimentum, quam nulla laoreet lectus, varius tempus sem ligula at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem vitae sem dignissim gravida. In efficitur",
+     "subtitle": null
+    }
+   ]
+   },
+   {
+    "id": "southland",
+    "image": {
+      "src": "/images/southland.jpg",
+      "alt": "Southland mountians"
+    },
+    "hotspots": null,
+    "copy":[{
+     "language": "EN",
+     "title": "Southland",
+     "description": "Southland (Māori: Murihiku, 'the last joint of the tail') is New Zealand's southernmost region. It consists mainly of the southwestern portion of the South Island and Stewart Island/Rakiura. It includes Southland District, Gore District and the city of Invercargill. Murihiku Southland is bordered by the culturally similar Otago to the north and east, and the West Coast in the extreme northwest. The region covers over 3.1 million hectares and spans over 3,400 km of coast. As of June 2022, Southland has a population of 102,400, making it the eleventh-most-populous New Zealand region, and the second-most sparsely populated.",
+     "subtitle": null
+    },
+     {
+     "language": "MI",
+     "title": "Murihiku",
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mauris ornare, vehicula enim et, sagittis orci. Duis vehicula, urna malesuada semper tincidunt, sem lacus porttitor leo, eget facilisis magna erat non tellus. Fusce dignissim euismod interdum. Phasellus euismod, diam a varius condimentum, quam nulla laoreet lectus, varius tempus sem ligula at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem vitae sem dignissim gravida. In efficitur",
+     "subtitle": null
+    }
+   ]
+   }
+ ]
+}

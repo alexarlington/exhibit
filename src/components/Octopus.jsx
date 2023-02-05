@@ -1,19 +1,16 @@
-import React, { Component, useState } from "react";
+import React from "react";
  
 function Octopus(props) {
-    console.log('hi ', props)
 
-
-   return <div>
+   return (<div>
     <p> 
       hi from Octopus.jsx
     </p>
-   </div>;
-
+    <img src="/images/close-up-1.jpg" alt="tenticle" />
+   </div>);
 
 }
 
- 
  export default Octopus
  
  

@@ -1,3 +1,51 @@
+
+
+
+
+
+
+
+
+
+{
+ "id": "exhibit1",
+ "pages": [
+
+
+  {
+   "id": "",
+   "image": {
+     "src": "/images/",
+     "alt": ""
+   },
+   "hotspots": [{
+    "shape": "",
+    "coords": "",
+    "alt": "",
+    "href": ""
+   }],
+   "copy":[{
+    "language": "EN",
+    "title": "",
+    "description": "",
+    "subtitle": ""
+   },
+    {
+    "language": "MI",
+    "title": "",
+    "description": "",
+    "subtitle": ""
+   }
+  ]
+  }
+
+
+ ]
+}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at mauris ornare, vehicula enim et, sagittis orci. Duis vehicula, urna malesuada semper tincidunt, sem lacus porttitor leo, eget facilisis magna erat non tellus. Fusce dignissim euismod interdum. Phasellus euismod, diam a varius condimentum, quam nulla laoreet lectus, varius tempus sem ligula at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat lorem vitae sem dignissim gravida. In efficitur.
+
+
 const octopusRoute = require('./routes/octopus.js')
 
 // app.listen(port, err =>{
