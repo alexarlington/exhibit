@@ -1,34 +1,45 @@
-import React from "react";
+import React, {useState} from "react";
 import { useParams } from 'react-router-dom'
 
-import Toggle from './Toggle.jsx'
 
  
 function Octopus(props) {  
   const { pagename } = useParams()
   const array = props.data
-
   const find = array.find(x => {
     return x.id === pagename
   })
   const findArray = [find]
-
   const index = findArray.findIndex(page => {
     return page.id === find.id
   })
   const octopus = findArray[index]
 
+
+  const copyArray = find.copy
+  const [state, setState] = useState("EN")
+  const findLang = copyArray.find(x => {
+   return x.language === state
+  })
+  const indexLang = copyArray.indexOf(findLang)
+
  return (
   <>
-   <Toggle info={find.copy}/>
+   <button onClick={() => setState("EN")} >
+    English
+   </button>
+   <button onClick={() => setState("MI")} >
+    Te Reo
+   </button>
+
   <h1>
-  {octopus.copy[0].title}
+  {octopus.copy[indexLang].title}
   </h1>
   <h3>
-    {octopus.copy[0].subtitle}
+    {octopus.copy[indexLang].subtitle}
   </h3>
   <p>
-    {octopus.copy[0].description}
+    {octopus.copy[indexLang].description}
   </p>
   <img src={octopus.image.src} alt={octopus.image.alt}/>
  </>

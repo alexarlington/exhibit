@@ -1,36 +1,23 @@
-import React, { useState } from "react";
+import React, { useState }from "react";
 
 function Toggle(props) {
  const array = props.info //[{english}, {teReo}]
-
- const [language, setLanguage] = useState([0])
  
- 
- const findLanguage = array.find(x => {
-  return x.language === array[language].language
+ const [state, setState] = useState("EN")
+ const findLang = array.find(x => {
+  return x.language === state
  })
- // [0] returning {Eng}
-
-
-
- // const currentIndex = array.findIndex(page => {
- //  return page.language === findLanguage.language
- // })
- // returning 0
-
- const handleClick = () => {
-  setLanguage(findLanguage)
- }
+ const indexLang = array.indexOf(findLang)
+ 
+ console.log(indexLang)
  
 
  return (
   <>
-       <button onClick={handleClick}>
-    {console.log("eng: ", language)}
+   <button onClick={() => setState("EN")} >
     English
    </button>
-   <button onClick={handleClick}>
-    {console.log("tereo: ", language)}
+   <button onClick={() => setState("MI")} >
     Te Reo
    </button>
   </>
@@ -38,7 +25,6 @@ function Toggle(props) {
 
 }
 
-// onclick needs to trigger a change in [array] index
-// onclick="myFunction()"
+
 
 export default Toggle
