@@ -1,25 +1,34 @@
 import React from "react";
 import { useParams } from 'react-router-dom'
- 
+
+import Toggle from './Toggle.jsx'
+
  
 function Octopus(props) {  
   const { pagename } = useParams()
-  const arrayOct = props.data
+  const array = props.data
 
-  const findOct = arrayOct.find(x => {
+  const find = array.find(x => {
     return x.id === pagename
   })
-  const findArrayOct = [findOct]
+  const findArray = [find]
 
-  const indexOct = findArrayOct.findIndex(page => {
-    return page.id === findOct.id
+  const index = findArray.findIndex(page => {
+    return page.id === find.id
   })
-  const octopus = findArrayOct[indexOct]
+  const octopus = findArray[index]
 
  return (
   <>
+   <Toggle info={find.copy}/>
+  <h1>
+  {octopus.copy[0].title}
+  </h1>
+  <h3>
+    {octopus.copy[0].subtitle}
+  </h3>
   <p>
-  {octopus.id}
+    {octopus.copy[0].description}
   </p>
   <img src={octopus.image.src} alt={octopus.image.alt}/>
  </>

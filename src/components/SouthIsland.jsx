@@ -4,26 +4,32 @@ import { useParams } from 'react-router-dom'
  
 function SouthIsland(props) {  
  const { pagename } = useParams()
- const arraySouth = props.data
+ const array = props.data
 
- const findSouth = arraySouth.find(x => {
+ const find = array.find(x => {
    return x.id === pagename
  })
- console.log(arraySouth)
- const findArraySouth = [findSouth]
 
- const indexSouth = findArraySouth.findIndex(page => {
-   return page.id === findSouth.id
+ const findArray = [find]
+
+ const index = findArray.findIndex(page => {
+   return page.id === find.id
  })
- const southIsland = findArraySouth[indexSouth]
+ const southIsland = findArray[index]
 
 return (
- <>
- <p>
- {southIsland.id}
- </p>
- <img src={southIsland.image.src} alt={southIsland.image.alt}/>
-</>
+<>
+  <h1>
+  {southIsland.copy[0].title}
+  </h1>
+  <h3>
+    {southIsland.copy[0].subtitle}
+  </h3>
+  <p>
+    {southIsland.copy[0].description}
+  </p>
+  <img src={southIsland.image.src} alt={southIsland.image.alt}/>
+ </>
 );
 
 }
