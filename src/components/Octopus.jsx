@@ -25,7 +25,8 @@ function Octopus(props) {
   const indexLang = copyArray.indexOf(findLang)
 
  return (
-  <>
+  <div onmousemove="stopTimeout()">
+  {}
   <Button page={props}/>
   <div>
    <button onClick={() => setState("EN")} >
@@ -51,16 +52,18 @@ function Octopus(props) {
   
   
   <div>
-   <Link to={`/`}>choose exhibit</Link><br/>
+   <Link to={`/`}>back</Link><br/>
    <Link to={`/octopus/octopus-home`}>HOME</Link><br/>
    <Link to={`/octopus/close-up-1`}>CLOSE UP ONE</Link><br/>
    <Link to={`/octopus/close-up-2`}>CLOSE UP TWO</Link><br/>
    <Link to={`/octopus/close-up-3`}>CLOSE UP THREE</Link><br/>
   </div>
- </>
+ </ div>
  );
 
 
 }
 
- export default Octopus
+export default Octopus
+
+

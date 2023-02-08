@@ -9,3 +9,16 @@ img {
 .description {
  white-space: pre-line;
 }
+
+html {
+ aspect-ratio: 16 / 9;
+ height: 1080px
+}
+
+button {
+ text-decoration: none;
+}
+
+h1 {
+ text-align: center;
+}

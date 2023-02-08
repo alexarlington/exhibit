@@ -1,0 +1,15 @@
+.home {
+ background-color: orange;
+ table-layout: fixed;    
+ display: table;
+ width: 100%;
+}
+.home-button {
+ border: none;
+ padding: 15px 32px;
+ font-size: 16px;
+ margin: 100px;
+}
+.home-p{
+ font-size: 50px;
+}
