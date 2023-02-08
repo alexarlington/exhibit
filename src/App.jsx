@@ -9,17 +9,14 @@ import Octopus from './components/Octopus.jsx'
 import SouthIsland from './components/SouthIsland.jsx'
 
 function App() {
-  const octoData = octopusExhibit.pages
-  const southIslandData = southIslandExhibit.pages
 
   return (
     <div>
-      <h1>App.jsx</h1>
      
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/octopus/:pagename" element={<Octopus data={octoData}/>} />
-        <Route path="/south-island/:pagename" element={<SouthIsland data={southIslandData}/>} />
+        <Route path="/octopus/:pagename" element={<Octopus data={octopusExhibit}/>} />
+        <Route path="/south-island/:pagename" element={<SouthIsland data={southIslandExhibit}/>} />
       </Routes>
 
     </div>

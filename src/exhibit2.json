@@ -3,7 +3,7 @@
  "exhibit": "south-island",
  "pages": [
   {
-    "id": "south-island",
+    "id": "south-island-home",
     "image": {
       "src": "/images/south-island.png",
       "alt": "Map of South Island"
@@ -92,7 +92,7 @@
    ]
    },
    {
-    "id": "west coast",
+    "id": "west-coast",
     "image": {
       "src": "/images/west-coast.jpg",
       "alt": "West Coast rocks"

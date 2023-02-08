@@ -1,10 +1,11 @@
 import React, {useState} from "react";
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
+import Button from './Button.jsx'
  
  
 function SouthIsland(props) {  
  const { pagename } = useParams()
- const array = props.data
+ const array = props.data.pages
  const find = array.find(x => {
    return x.id === pagename
  })
@@ -25,12 +26,15 @@ function SouthIsland(props) {
 
 return (
 <>
-<button onClick={() => setState("EN")} >
+<Button page={props}/>
+<div>
+  <button onClick={() => setState("EN")} >
     English
    </button>
    <button onClick={() => setState("MI")} >
     Te Reo
    </button>
+</div>
 
   <h1>
   {southIsland.copy[indexLang].title}
@@ -42,6 +46,17 @@ return (
     {southIsland.copy[indexLang].description}
   </p>
   <img src={southIsland.image.src} alt={southIsland.image.alt}/>
+<div>
+<Link to={`/`}>choose exhibit</Link><br/>
+   <Link to={`/south-island/south-island-home`}>HOME</Link><br/>
+   <Link to={`/south-island/tasman`}>Tasman</Link><br/>
+   <Link to={`/south-island/nelson`}>Nelson</Link><br/>
+   <Link to={`/south-island/marlborough`}>Marlborough</Link><br/>
+   <Link to={`/south-island/west-coast`}>West Coast</Link><br/>
+   <Link to={`/south-island/canterbury`}>Canterbury</Link><br/>
+   <Link to={`/south-island/otago`}>Otago</Link><br/>
+   <Link to={`/south-island/southland`}>Southland</Link><br/>
+</div>
  </>
 );
 

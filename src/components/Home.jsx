@@ -7,11 +7,11 @@ function Home() {
   
    return (<div>
     <p> 
-      hi from Home.jsx
+      Click to see exhibit:
     </p>
     <p>
     <button><Link to={`/octopus/octopus-home`}>Octopus Exhibit</Link></button>
-    <button><Link to={`/south-island/south-island`}>South Island Exhibit </Link></button>
+    <button><Link to={`/south-island/south-island-home`}>South Island Exhibit </Link></button>
     </p>
 
    </div>)
