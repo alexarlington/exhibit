@@ -1,9 +1,25 @@
-      const timeout = setTimeout(function () {
-      window.location.href = '/';
-      }, 5000)
+function timeout() {
+  setTimeout(function () {
+  window.location.href = '/';
+  }, 5000)   
+}
 
-      function stopTimeout() {
-      clearTimeout(timeout);}
+const timeout = setTimeout(function () {
+window.location.href = '/';
+}, 5000)   
+
+promise:
+stop :clearTimeout(timeout);
+then: newTimeout = setTimeout()
+
+
+function stopTimeout() {
+clearTimeout(timeout);
+
+
+
+
+
 
 
         <div id="root" onmousemove="stopTimeout()">

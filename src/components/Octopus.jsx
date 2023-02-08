@@ -25,7 +25,7 @@ function Octopus(props) {
   const indexLang = copyArray.indexOf(findLang)
 
  return (
-  <div onmousemove="stopTimeout()">
+  <div>
   {}
   <Button page={props}/>
   <div>
