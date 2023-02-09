@@ -1,5 +1,5 @@
-[LINK TO WEBSITE](https://subtle-jelly-37f12b.netlify.app/)
-
+[LINK TO WEBSITE](https://subtle-jelly-37f12b.netlify.app/). deployment still in progress
+ 
 Initial assumptions
 
 "centralized systemt hat can be updated... they behave consistently and are easily updated/added to"
