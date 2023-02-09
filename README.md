@@ -1,51 +1,26 @@
-function timeout() {
-  setTimeout(function () {
-  window.location.href = '/';
-  }, 5000)   
-}
-
-const timeout = setTimeout(function () {
-window.location.href = '/';
-}, 5000)   
-
-promise:
-stop :clearTimeout(timeout);
-then: newTimeout = setTimeout()
-
-
-function stopTimeout() {
-clearTimeout(timeout);
-
-
-
-
-
-
-
-        <div id="root" onmousemove="stopTimeout()">
-
-// 60000
-
-// onmousemove={stopTimeout()}
-// onMouseMoveCapture={stopTimeout()}
-
-
+  let [timerId, setTimerId] = useState();
   
-// const timeout = setTimeout(function () {
-//  window.location.href = '/';
-//  }, 5000)
+  function startTimer(){
+     timerId = (setTimeout(function () {
+      window.location.href = '/';
+      }, 5000))
+      console.log(timerId)
+      setTimerId(timerId)
+  }
 
-//  function timeoutFunction() {
-//   return timeout
-//  }
+  const resetTimer = () => {
+    clearTimeout(timerId);
+    startTimer()
+    console.log(timerId)
+  }
+  
+  useEffect(() => {
+    startTimer()
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [])
 
-// function stopTimeout() {
-//  clearTimeout(timeout);
-//  timeout}
 
-//  useEffect(() => {
-//   const timeout = setTimeout(function () {
-//     window.location.href = '/';
-//     }, 5000)
-//   return () => clearTimeout(timeout);
-// }, []);
+
+  < div onClick={resetTimer}>

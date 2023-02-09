@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { useParams, Link } from 'react-router-dom'
 import Button from './Button.jsx'
 
@@ -24,23 +24,11 @@ function SouthIsland(props) {
   })
   const indexLang = copyArray.indexOf(findLang)
 
-  
-  
-  function timer(){
-    setTimeout(function () {
-      window.location.href = '/';
-      }, 5000)
-  }
-  // timer()
 
-  function stopTimeout(e) {
-    console.log(e)
-    clearTimeout(timer)
-  }
 
 return (
-  <div onMouseOver={stopTimeout}>
 
+  <div>
   <Button page={props}/>
     <div>
       <button onClick={() => setState("EN")} >
