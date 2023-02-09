@@ -9,12 +9,41 @@
       "alt": "Map of South Island"
     },
     "hotspots": [{
-     "mapId": "",
-     "shape": "",
-     "coords": "",
-     "alt": "",
-     "href": ""
-    }],
+     "shape": "poly",
+     "coords": "693,364,714,296,656,197,587,237,640,306,579,385,629,452",
+     "alt": "tasman",
+     "href": "/south-island/tasman"
+    },{
+      "shape": "circle",
+      "coords": "713,144,71",
+      "alt": "nelson",
+      "href": "/south-island/nelson"
+     },{
+      "shape": "poly",
+      "coords": "736,280,652,410,689,466,796,398,860,317,791,215",
+      "alt": "marlborough",
+      "href": "/south-island/marlborough"
+     },{
+      "shape": "poly",
+      "coords": "595,232,650,288,583,389,625,444,226,761,187,732,449,504",
+      "alt": "west-coast",
+      "href": "/south-island/west-coast"
+     },{
+      "shape": "poly",
+      "coords": "787,398,765,382,693,453,657,416,351,673,337,748,401,812,498,807,616,645,672,671,715,639,672,573",
+      "alt": "canterbury",
+      "href": "/south-island/canterbury"
+     },{
+      "shape": "poly",
+      "coords": "342,685,331,747,405,818,487,808,424,989,313,1057,299,907,299,867,274,889,220,878,203,826,218,761",
+      "alt": "otago",
+      "href": "/south-island/otago"
+     },{
+      "shape": "poly",
+      "coords": "161,1155,318,1050,296,873,211,846,215,746,181,740,33,969,171,1021",
+      "alt": "southland",
+      "href": "/south-island/southland"
+     }],
     "copy":[{
      "language": "EN",
      "title": "South Island",

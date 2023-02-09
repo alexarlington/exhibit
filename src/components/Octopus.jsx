@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
-import { useParams} from 'react-router-dom'
+import { useParams, Link} from 'react-router-dom'
 import '../styles/horizontal-component.css';
 import '../styles/button.css';
+
 import Button from './Button.jsx'
 
  
@@ -28,14 +29,12 @@ function Octopus(props) {
      timerId = (setTimeout(function () {
       window.location.href = '/';
       }, 60000))
-      console.log(timerId)
       setTimerId(timerId)
   }
 
   const resetTimer = () => {
     clearTimeout(timerId);
     startTimer()
-    console.log(timerId)
   }
   
   useEffect(() => {
@@ -47,17 +46,11 @@ function Octopus(props) {
   
   const indexLang = copyArray.indexOf(findLang)
   const octopus = findArray[index]
-  // const hotspot = octopus.hotspots[0]
-  // console.log(hotspot)
-
-
-
+  // const hotspot = octopus.hotspots
 
 
  return (
-  <div onClick={resetTimer}>
-
-
+   <div onClick={resetTimer}>
     <div className="button-container-h">
       <Button page={props}/>
       <button className='page-button' onClick={() => setState("EN")} >
@@ -84,19 +77,14 @@ function Octopus(props) {
       <img src={octopus.image.src} alt={octopus.image.alt} useMap="octo=map"/>
     </div>
   </div>
+  <div className="dom-links-h">
+    <Link to={`/octopus/close-up-1`}>CLOSE UP ONE</Link><br/>
+    <Link to={`/octopus/close-up-2`}>CLOSE UP TWO</Link><br/>
+    <Link to={`/octopus/close-up-3`}>CLOSE UP THREE</Link><br/>
+</div>
 </ div>
  )
 }
 
 export default Octopus
-
-
-
-{/* <div>
-<Link to={`/`}>back</Link><br/>
-<Link to={`/octopus/octopus-home`}>HOME</Link><br/>
-<Link to={`/octopus/close-up-1`}>CLOSE UP ONE</Link><br/>
-<Link to={`/octopus/close-up-2`}>CLOSE UP TWO</Link><br/>
-<Link to={`/octopus/close-up-3`}>CLOSE UP THREE</Link><br/>
-</div> */}
 

@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import '../styles/home.css';
- 
- 
+
+
+
 function Home() {
 
    return (
@@ -18,4 +19,4 @@ function Home() {
    
 }
 
- export default Home
+export default Home

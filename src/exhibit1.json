@@ -8,11 +8,22 @@
      "alt": "Octopus on backlight"
    },
    "hotspots": [{
-    "shape": "circle",
+    "shape": "cirle",
     "coords": "750,884,199",
     "alt": "tenticle",
     "href": "/octopus/close-up-1"
-   }],
+   },{
+    "shape": "cirle",
+    "coords": "1226,1147,139",
+    "alt": "tenticle",
+    "href": "/octopus/close-up-1"
+   }, {
+   "shape": "circle",
+    "coords": "1168,528,126",
+    "alt": "tenticle",
+    "href": "/octopus/close-up-1"
+   }
+  ],
    "copy":[{
     "language": "EN",
     "title": "Sydney Octopus",

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import '../styles/vertical-component.css';
 import '../styles/button.css';
 import '../main.css';
@@ -28,7 +28,7 @@ function SouthIsland(props) {
   function startTimer(){
      timerId = (setTimeout(function () {
       window.location.href = '/';
-      }, 600000))
+      }, 60000))
       console.log(timerId)
       setTimerId(timerId)
   }
@@ -79,6 +79,15 @@ return (
             {southIsland.copy[indexLang].description}
           </p>
       </div>
+    </div >
+    <div className="dom-links-v">
+        <Link to={`/south-island/tasman`}>TASMAN</Link><br/>
+        <Link to={`/south-island/nelson`}>NELSON</Link><br/>
+        <Link to={`/south-island/marlborough`}>MALBOROUGH</Link><br/>
+        <Link to={`/south-island/west-coast`}>WEST COAST</Link><br/>
+        <Link to={`/south-island/canterbury`}>CANTERBURY</Link><br/>
+        <Link to={`/south-island/otago`}>OTAGO</Link><br/>
+        <Link to={`/south-island/southland`}>SOUTHLAND</Link><br/>
     </div>
     </div>
 );
@@ -86,12 +95,3 @@ return (
 }
 
  export default SouthIsland
-
-//  <Link to={`/south-island/south-island-home`}>HOME</Link><br/>
-//  <Link to={`/south-island/tasman`}>Tasman</Link><br/>
-//   <Link to={`/south-island/nelson`}>Nelson</Link><br/>
-//   <Link to={`/south-island/marlborough`}>Marlborough</Link><br/>
-//   <Link to={`/south-island/west-coast`}>West Coast</Link><br/>
-//   <Link to={`/south-island/canterbury`}>Canterbury</Link><br/>
-//   <Link to={`/south-island/otago`}>Otago</Link><br/>
-//   <Link to={`/south-island/southland`}>Southland</Link><br/>
