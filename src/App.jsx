@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div>
-     <h1>Tamaki Paenga Hira</h1>
+     {/* <h1>Tamaki Paenga Hira</h1> */}
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/octopus/:pagename" element={<Octopus data={octopusExhibit}/>} />

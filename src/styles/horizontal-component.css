@@ -1,0 +1,36 @@
+.component-h {
+ /* background-color: yellowgreen; */
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ padding-top: 500px;
+ height: 100%;
+}
+.component-text-h{
+ /* background-color: palevioletred; */
+ margin-top: 5px;
+ position: absolute;
+ top: 300px;
+ width: 500px;
+ left: 30px;
+ padding: 20px;
+}
+
+.component-image-h{
+ display: flex;
+ position: absolute;
+ left: 500px;
+ top: 50px;
+ margin-left: 100px;
+}
+
+.button-container-h{
+ position: absolute;
+ top: 50px;
+  left: 30px;
+  padding: 20px;
+  width: 420px;
+  margin: 5px;
+
+
+}

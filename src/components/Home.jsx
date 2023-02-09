@@ -5,19 +5,17 @@ import '../styles/home.css';
  
 function Home() {
 
-  
    return (
-   <div className="home">
-    <p className="home-p"> 
+   <div >
+    <h2 className="h2-home"> 
       Click to see exhibit:
-    </p>
-    <p>
+    </h2>
+    <div className="home">
     <button className="home-button"><Link to={`/octopus/octopus-home`}>Octopus Exhibit</Link></button>
     <button className="home-button"><Link to={`/south-island/south-island-home`}>South Island Exhibit </Link></button>
-    </p>
-
+    </div>
    </div>)
-
+   
 }
 
  export default Home

@@ -8,10 +8,10 @@
      "alt": "Octopus on backlight"
    },
    "hotspots": [{
-    "shape": "",
-    "coords": "",
-    "alt": "",
-    "href": ""
+    "shape": "circle",
+    "coords": "750,884,199",
+    "alt": "tenticle",
+    "href": "/octopus/close-up-1"
    }],
    "copy":[{
     "language": "EN",

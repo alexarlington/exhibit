@@ -1,8 +1,8 @@
-import React, {useState} from "react";
-import { useParams, Link } from 'react-router-dom'
+import React, {useState, useEffect} from "react";
+import { useParams} from 'react-router-dom'
+import '../styles/horizontal-component.css';
+import '../styles/button.css';
 import Button from './Button.jsx'
-
-
 
  
 function Octopus(props) {  
@@ -15,55 +15,88 @@ function Octopus(props) {
   const index = findArray.findIndex(page => {
     return page.id === find.id
   })
-  const octopus = findArray[index]
-
+  
   const copyArray = find.copy
   const [state, setState] = useState("EN")
   const findLang = copyArray.find(x => {
-   return x.language === state
+    return x.language === state
   })
+
+  let [timerId, setTimerId] = useState();
+  
+  function startTimer(){
+     timerId = (setTimeout(function () {
+      window.location.href = '/';
+      }, 60000))
+      console.log(timerId)
+      setTimerId(timerId)
+  }
+
+  const resetTimer = () => {
+    clearTimeout(timerId);
+    startTimer()
+    console.log(timerId)
+  }
+  
+  useEffect(() => {
+    startTimer()
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [])
+  
   const indexLang = copyArray.indexOf(findLang)
+  const octopus = findArray[index]
+  // const hotspot = octopus.hotspots[0]
+  // console.log(hotspot)
+
+
+
+
 
  return (
-  <div>
-  {}
-  <Button page={props}/>
-  <div>
-   <button onClick={() => setState("EN")} >
-    English
-   </button>
-   <button onClick={() => setState("MI")} >
-    Te Reo
-   </button>
+  <div onClick={resetTimer}>
+
+
+    <div className="button-container-h">
+      <Button page={props}/>
+      <button className='page-button' onClick={() => setState("EN")} >
+        English
+      </button>
+      <button className='page-button' onClick={() => setState("MI")} >
+        Te Reo
+      </button>
+    </div>
+
+  <div className="component-h">
+    <div className="component-text-h">
+      <h2>
+        {octopus.copy[indexLang].title}
+      </h2>
+      <h3>
+        {octopus.copy[indexLang].subtitle}
+      </h3>
+      <p>
+        {octopus.copy[indexLang].description}
+      </p>
+    </div>
+    <div className="component-image-h">
+      <img src={octopus.image.src} alt={octopus.image.alt} useMap="octo=map"/>
+    </div>
   </div>
-
-  <h1>
-  {octopus.copy[indexLang].title}
-  </h1>
-  <h3>
-    {octopus.copy[indexLang].subtitle}
-  </h3>
-  <p>
-    {octopus.copy[indexLang].description}
-  </p>
-  <img src={octopus.image.src} alt={octopus.image.alt}/>
-  
-  
-  
-  
-  <div>
-   <Link to={`/`}>back</Link><br/>
-   <Link to={`/octopus/octopus-home`}>HOME</Link><br/>
-   <Link to={`/octopus/close-up-1`}>CLOSE UP ONE</Link><br/>
-   <Link to={`/octopus/close-up-2`}>CLOSE UP TWO</Link><br/>
-   <Link to={`/octopus/close-up-3`}>CLOSE UP THREE</Link><br/>
-  </div>
- </ div>
- );
-
-
+</ div>
+ )
 }
 
 export default Octopus
 
+
+
+{/* <div>
+<Link to={`/`}>back</Link><br/>
+<Link to={`/octopus/octopus-home`}>HOME</Link><br/>
+<Link to={`/octopus/close-up-1`}>CLOSE UP ONE</Link><br/>
+<Link to={`/octopus/close-up-2`}>CLOSE UP TWO</Link><br/>
+<Link to={`/octopus/close-up-3`}>CLOSE UP THREE</Link><br/>
+</div> */}
 

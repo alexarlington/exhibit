@@ -1,3 +1,20 @@
 .page-button {
- background-color: aqua;
+ background-color: lighortblue;
+ align-items: center;
+ box-shadow: black 0 1px 3px 0;
+ cursor: pointer;
+ border: 1px solid rgba(0, 0, 0, 0.1);
+ font-size: 30px;
+ font-weight: 600;
+ text-decoration: none;
+ padding: 20px;
+ margin: 5px;
+ width: 200px;
+
+}
+
+.page-button:hover{
+ border-color: rgba(0, 0, 0, 0.15);
+ box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+ color: rgba(0, 0, 0, 0.65);
 }

@@ -1,9 +1,10 @@
 body {
- background-color: bisque;
+ background-color: white;
 }
 
 img {
- width: 1000px;
+ width: 99%;
+ justify-content: center;
 }
 
 .description {
@@ -12,7 +13,8 @@ img {
 
 html {
  aspect-ratio: 16 / 9;
- height: 1080px
+ width: 1920px;
+ height: 1080px;
 }
 
 button {
@@ -21,4 +23,21 @@ button {
 
 h1 {
  text-align: center;
+ padding: 50px;
+ font-size: 100px
 }
+h2 {
+ font-size: 80px
+}
+h3{
+ font-size: 50px
+}
+p{
+ font-size: 30px
+}
+/* 0 - 1486px screen is black, after its white */
+/* @media only screen and (max-width: 1080px) { 
+ body {
+  background-color: orchid;
+ }
+ } */
