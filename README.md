@@ -1,4 +1,4 @@
-[LINK TO WEBSITE]()
+[LINK TO WEBSITE](https://subtle-jelly-37f12b.netlify.app/)
 
 Initial assumptions
 
@@ -22,11 +22,7 @@ web performance less of a priority cause pages only need to load once
 hotspots-html image mapping
 use react router i reckon
 
-
-
-
-
-updated thoughts after finishing
+updated thoughts after finishing: 
 back end DELETED cause the data can just be in the front end which in retrospect makes more sense
 need having 2 seperate .jsx components and css, one for horizontal, one for vertical
 html image mapping doesnt work and need react-img-mapper dependency which i dont knw how to use yet
