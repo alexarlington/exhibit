@@ -27,6 +27,6 @@ other thoughts: <br />
 * express backend
 
 #### updated thoughts after finishing:####  <br />
-* Deleted the backeend. The data can just be in the front as a backend is out of scope for now.
+* Deleted the backend. The data can just be in the front as a backend is out of scope for now.
 * Two seperate .jsx components are needed with two seperate css -> one for horizontal, one for vertical.
-* html image mapping doesnt work in react. Needed react-img-mapper dependency which I dont know how to use yet. Unfortunately, I couldn't figure it out in time. The json should have the appropriate information for the image mapping.
+* html image mapping doesnt work in react. Needed react-img-mapper dependency which I dont know how to use yet. Unfortunately, I couldn't figure it out in time. The json should have the appropriate information for the image mapping. I have provided (unstyled) links to the other pages for you to navigate around easier
