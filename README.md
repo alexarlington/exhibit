@@ -2,7 +2,7 @@
 
 Site is styled to fit 1920x1080px (27" screen) so will need to zoom out if on a smaller screen.
  
-#### Initial assumptions#### 
+#### Initial assumptions
 
 > "centralized systemt hat can be updated... they behave consistently and are easily updated/added to"
 * Will use React. Because react is dynamic, I won't be directly putting information (such as text) into the html.
@@ -26,7 +26,7 @@ other thoughts: <br />
 * react router to navigate through pages
 * express backend
 
-#### updated thoughts after finishing:####  <br />
+#### updated thoughts after finishing: <br />
 * Deleted the backend. The data can just be in the front as a backend is out of scope for now.
 * Two seperate .jsx components are needed with two seperate css -> one for horizontal, one for vertical.
 * html image mapping doesnt work in react. Needed react-img-mapper dependency which I dont know how to use yet. Unfortunately, I couldn't figure it out in time. The json should have the appropriate information for the image mapping. I have provided (unstyled) links to the other pages for you to navigate around easier
