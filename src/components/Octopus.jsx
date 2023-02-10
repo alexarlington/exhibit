@@ -42,6 +42,7 @@ function Octopus(props) {
     return () => {
       clearTimeout(timerId);
     };
+  // eslint-disable-next-line
   }, [])
   
   const indexLang = copyArray.indexOf(findLang)
