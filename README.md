@@ -1,5 +1,5 @@
-[LINK TO WEBSITE](https://subtle-jelly-37f12b.netlify.app/)
-
+[LINK TO WEBSITE](https://subtle-jelly-37f12b.netlify.app/). deployment still in progress
+ 
 Initial assumptions
 
 "centralized systemt hat can be updated... they behave consistently and are easily updated/added to"
@@ -25,4 +25,4 @@ use react router i reckon
 updated thoughts after finishing: 
 back end DELETED cause the data can just be in the front end which in retrospect makes more sense
 need having 2 seperate .jsx components and css, one for horizontal, one for vertical
-html image mapping doesnt work and need react-img-mapper dependency which i dont knw how to use yet, unfortunately i couldn't figure it out in time.
+html image mapping doesnt work and need react-img-mapper dependency which i dont knw how to use yet, unfortunately i couldn't figure it out in time. The json should have the appropriate information for the image mapping
